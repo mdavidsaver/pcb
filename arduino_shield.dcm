@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP arduino_shield
+D Arduino Uno shield
+K arduino shield
+$ENDCMP
+#
+#End Doc Library

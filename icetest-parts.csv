@@ -1,0 +1,8 @@
+Comment,Manufacturer,Digikey,Price,Num,,URL
+fpga,ICE40HX1K-VQ100,220-1567-ND,$4.95,1,$4.95,http://www.digikey.com/product-detail/en/lattice-semiconductor-corporation/ICE40HX1K-VQ100/220-1567-ND/3083577
+level translate,TXB0108PWR,296-21527-1-ND,$1.88,4,$7.52,http://www.digikey.com/product-detail/en/texas-instruments/TXB0108PWR/296-21527-1-ND/1305700
+1.2V reg.,NCP585DSN12T1G,NCP585DSN12T1GOSCT-ND,$0.71,1,$0.71,http://www.digikey.com/product-detail/en/on-semiconductor/NCP585DSN12T1G/NCP585DSN12T1GOSCT-ND/822802
+3.3V reg.,AP2112K-3.3TRG1,AP2112K-3.3TRG1DICT-ND,$0.48,1,$0.48,http://www.digikey.com/product-detail/en/diodes-incorporated/AP2112K-3.3TRG1/AP2112K-3.3TRG1DICT-ND/4505257
+20V shottky diode,CDBU0520,641-1332-1-ND,$0.47,1,$0.47,http://www.digikey.com/product-detail/en/comchip-technology/CDBU0520/641-1332-1-ND/2021253
+12MHz Osc.,636L3C012M00000,CTX1006CT-ND,$1.37,1,$1.37,http://www.digikey.com/product-detail/en/cts-frequency-controls/636L3C012M00000/CTX1006CT-ND/2640344
+,,,,,$15.50,

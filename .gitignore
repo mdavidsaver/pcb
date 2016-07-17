@@ -1,0 +1,8 @@
+*.net
+*.bak
+*-bak
+*.bck
+*.bin
+*.dsn
+*.rules
+*.ses

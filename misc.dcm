@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP oscillator4
+D 4 pin oscillator package
+K osc oscillator
+$ENDCMP
+#
+$CMP regulator5
+D 5 terminal linear regulator
+K regul
+$ENDCMP
+#
+#End Doc Library
