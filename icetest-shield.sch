@@ -422,7 +422,7 @@ F 3 "" H 2250 3000 50  0000 C CNN
 	1    2250 3000
 	-1   0    0    1   
 $EndComp
-Text HLabel 4050 2700 1    60   Input ~ 0
+Text HLabel 4050 2700 1    60   Output ~ 0
 a3V3
 NoConn ~ 5950 4150
 NoConn ~ 5950 4250
@@ -621,4 +621,19 @@ Text Label 2150 4750 0    60   ~ 0
 ANA[0..5]
 Text HLabel 2250 3550 0    60   Input ~ 0
 LOG_L3E
+$Comp
+L GND #PWR?
+U 1 1 5793C5E6
+P 5100 4700
+F 0 "#PWR?" H 5100 4450 50  0001 C CNN
+F 1 "GND" H 5100 4550 50  0000 C CNN
+F 2 "" H 5100 4700 50  0000 C CNN
+F 3 "" H 5100 4700 50  0000 C CNN
+	1    5100 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4700 5200 4700
+Connection ~ 5100 4700
+Connection ~ 5000 4700
 $EndSCHEMATC
