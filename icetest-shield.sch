@@ -223,13 +223,15 @@ F 3 "" H 7000 2300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Entry Wire Line
-	6200 2500 6300 2600
+	6200 3200 6300 3300
 Entry Wire Line
-	6200 2700 6300 2800
+	6200 2600 6300 2700
 Entry Wire Line
 	6100 3650 6200 3750
 Entry Wire Line
-	6200 2600 6300 2700
+	6200 2500 6300 2600
+Entry Wire Line
+	6200 2700 6300 2800
 Entry Wire Line
 	6200 2800 6300 2900
 Entry Wire Line
@@ -238,8 +240,6 @@ Entry Wire Line
 	6200 3000 6300 3100
 Entry Wire Line
 	6200 3100 6300 3200
-Entry Wire Line
-	6200 3200 6300 3300
 Entry Wire Line
 	6100 3550 6200 3650
 Entry Wire Line
@@ -270,21 +270,21 @@ Text Label 5950 3550 0    60   ~ 0
 aD7
 Text Label 5950 3650 0    60   ~ 0
 aD6
-Text Label 6400 2600 0    60   ~ 0
-aD6
-Text Label 6400 2700 0    60   ~ 0
-aD7
-Text Label 6350 2800 0    60   ~ 0
-aSCK
-Text Label 6350 2900 0    60   ~ 0
-aMOSI
-Text Label 6350 3000 0    60   ~ 0
-aMISO
-Text Label 6350 3100 0    60   ~ 0
-aD8
-Text Label 6350 3200 0    60   ~ 0
-aD9
 Text Label 6350 3300 0    60   ~ 0
+aD6
+Text Label 6400 2600 0    60   ~ 0
+aD7
+Text Label 6350 2700 0    60   ~ 0
+aSCK
+Text Label 6350 2800 0    60   ~ 0
+aMOSI
+Text Label 6350 2900 0    60   ~ 0
+aMISO
+Text Label 6350 3000 0    60   ~ 0
+aD8
+Text Label 6350 3100 0    60   ~ 0
+aD9
+Text Label 6350 3200 0    60   ~ 0
 aD10
 NoConn ~ 6450 4500
 NoConn ~ 6450 4700
@@ -318,21 +318,21 @@ F 3 "" H 7950 3700 50  0000 C CNN
 $EndComp
 Text Notes 7600 4050 0    60   ~ 0
 Pull-up enables at powerup\nto allow programming
-Text Label 7750 2600 0    60   ~ 0
-DIG6
-Text Label 7750 2700 0    60   ~ 0
-ICE_SS
-Text Label 7750 2800 0    60   ~ 0
-SCK
-Text Label 7750 2900 0    60   ~ 0
-MOSI
-Text Label 7750 3000 0    60   ~ 0
-MISO
-Text Label 7750 3100 0    60   ~ 0
-ICE_RST
-Text Label 7750 3200 0    60   ~ 0
-ICE_CDONE
 Text Label 7750 3300 0    60   ~ 0
+DIG6
+Text Label 7750 2600 0    60   ~ 0
+ICE_SS
+Text Label 7750 2700 0    60   ~ 0
+SCK
+Text Label 7750 2800 0    60   ~ 0
+MOSI
+Text Label 7750 2900 0    60   ~ 0
+MISO
+Text Label 7750 3000 0    60   ~ 0
+ICE_RST
+Text Label 7750 3100 0    60   ~ 0
+ICE_CDONE
+Text Label 7750 3200 0    60   ~ 0
 DIG10
 Entry Wire Line
 	8000 4400 8100 4500
@@ -426,11 +426,11 @@ Text HLabel 4050 2700 1    60   Output ~ 0
 a3V3
 NoConn ~ 5950 4150
 NoConn ~ 5950 4250
-Text HLabel 8250 2800 2    60   Output ~ 0
+Text HLabel 8250 2700 2    60   Output ~ 0
 SCK
-Text HLabel 8250 2900 2    60   Output ~ 0
+Text HLabel 8250 2800 2    60   Output ~ 0
 MOSI
-Text HLabel 8250 3000 2    60   Input ~ 0
+Text HLabel 8250 2900 2    60   Input ~ 0
 MISO
 Wire Wire Line
 	4250 2900 4050 2900
@@ -482,7 +482,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 4650 3100 4750
 Wire Wire Line
-	6600 2600 6300 2600
+	6300 2600 6600 2600
 Wire Wire Line
 	6300 2700 6600 2700
 Wire Wire Line
@@ -495,8 +495,6 @@ Wire Wire Line
 	6300 3100 6600 3100
 Wire Wire Line
 	6300 3200 6600 3200
-Wire Wire Line
-	6300 3300 6600 3300
 Wire Wire Line
 	6100 2950 5950 2950
 Wire Wire Line
@@ -542,21 +540,17 @@ Wire Wire Line
 Wire Bus Line
 	6200 2500 6200 3750
 Wire Wire Line
-	7700 2600 9000 2600
+	8250 2600 7700 2600
 Wire Wire Line
-	8250 2700 7700 2700
+	7700 2700 8250 2700
 Wire Wire Line
-	7700 2800 8250 2800
+	8250 2800 7700 2800
 Wire Wire Line
-	8250 2900 7700 2900
+	7700 2900 8250 2900
 Wire Wire Line
 	7700 3000 8250 3000
 Wire Wire Line
-	7700 3100 8250 3100
-Wire Wire Line
-	8250 3200 7700 3200
-Wire Wire Line
-	7700 3300 9000 3300
+	8250 3100 7700 3100
 Wire Wire Line
 	7700 3400 7950 3400
 Wire Bus Line
@@ -595,14 +589,14 @@ Wire Wire Line
 	7550 5500 7550 5200
 Wire Wire Line
 	4050 2900 4050 2700
-Text HLabel 8250 2700 2    60   Output ~ 0
+Text HLabel 8250 2600 2    60   Output ~ 0
 ICE_SS
-Text HLabel 8250 3100 2    60   Output ~ 0
+Text HLabel 8250 3000 2    60   Output ~ 0
 ICE_RST
-Text HLabel 8250 3200 2    60   Input ~ 0
+Text HLabel 8250 3100 2    60   Input ~ 0
 ICE_CDONE
 Entry Wire Line
-	9000 2600 9100 2700
+	9000 3200 9100 3300
 Entry Wire Line
 	9000 3300 9100 3400
 Wire Bus Line
@@ -622,10 +616,10 @@ ANA[0..5]
 Text HLabel 2250 3550 0    60   Input ~ 0
 LOG_L3E
 $Comp
-L GND #PWR?
+L GND #PWR090
 U 1 1 5793C5E6
 P 5100 4700
-F 0 "#PWR?" H 5100 4450 50  0001 C CNN
+F 0 "#PWR090" H 5100 4450 50  0001 C CNN
 F 1 "GND" H 5100 4550 50  0000 C CNN
 F 2 "" H 5100 4700 50  0000 C CNN
 F 3 "" H 5100 4700 50  0000 C CNN
@@ -636,4 +630,10 @@ Wire Wire Line
 	4900 4700 5200 4700
 Connection ~ 5100 4700
 Connection ~ 5000 4700
+Wire Wire Line
+	6600 3300 6300 3300
+Wire Wire Line
+	9000 3200 7700 3200
+Wire Wire Line
+	9000 3300 7700 3300
 $EndSCHEMATC
