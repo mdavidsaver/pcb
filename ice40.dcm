@@ -3,6 +3,7 @@ EESchema-DOCLIB  Version 2.0
 $CMP iCE40HX1K-VQ100
 D iCE40 FPGA in VQFP 100 pin
 K fpga ice40
+F http://www.latticesemi.com/~/media/LatticeSemi/Documents/Handbooks/iCE40FamilyHandbook.pdf
 $ENDCMP
 #
 #End Doc Library
