@@ -234,7 +234,7 @@ Text HLabel 2500 2200 0    60   Output ~ 0
 LOG_L2E
 Text HLabel 2750 3800 2    60   Output ~ 0
 LOG_L3E
-Text HLabel 2000 3100 0    60   BiDi ~ 0
+Text HLabel 2000 2900 1    60   BiDi ~ 0
 ANA[0..5]
 Text Label 2100 3100 0    60   ~ 0
 ANA[0..5]
@@ -579,8 +579,6 @@ Wire Wire Line
 	3000 2400 3350 2400
 Wire Wire Line
 	4700 2100 4950 2100
-Wire Bus Line
-	2000 3100 3300 3100
 Wire Wire Line
 	3200 4200 2650 4200
 Wire Wire Line
@@ -1153,4 +1151,14 @@ Wire Wire Line
 	1200 3900 700  3900
 Wire Wire Line
 	700  3900 700  4100
+Wire Bus Line
+	2000 2900 2000 3100
+Entry Wire Line
+	850  3600 950  3700
+Entry Wire Line
+	850  3700 950  3800
+Wire Bus Line
+	850  3100 3300 3100
+Wire Bus Line
+	850  3100 850  3700
 $EndSCHEMATC

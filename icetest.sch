@@ -1004,5 +1004,7 @@ Wire Wire Line
 	6900 2000 7750 2000
 NoConn ~ 7850 4400
 Text Notes 7250 4950 0    60   ~ 0
-Fixed 1.2V regulator\nno R divider needed
+Fixed 3.3V regulator\nno R divider needed
+Text Notes 8450 3750 0    60   ~ 0
+Both regulators have\nactive high enable
 $EndSCHEMATC
