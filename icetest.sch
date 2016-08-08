@@ -1007,4 +1007,6 @@ Text Notes 7250 4950 0    60   ~ 0
 Fixed 3.3V regulator\nno R divider needed
 Text Notes 8450 3750 0    60   ~ 0
 Both regulators have\nactive high enable
+Text Notes 3650 5550 0    60   ~ 0
+I/O interconnects\nas 3.3v
 $EndSCHEMATC

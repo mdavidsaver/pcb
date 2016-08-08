@@ -1140,4 +1140,10 @@ F 3 "" H 8450 2350 50  0000 C CNN
 	1    8250 2350
 	-1   0    0    1   
 $EndComp
+Text Notes 6050 2600 0    60   ~ 0
+RST high starts config process\nautomatically
+Text Notes 8150 2900 0    60   ~ 0
+CDONE pull up as per\nice40 handbook
+Text Notes 9100 1250 0    60   ~ 0
+SCLK pull up recommended\nby ice40 handbook
 $EndSCHEMATC
