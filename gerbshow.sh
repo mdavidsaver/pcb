@@ -20,4 +20,13 @@ WORK="$(mktemp -d)"
 
 unzip -d "$WORK" "$in"
 
-gerbv "$WORK"/*
+gerbv \
+"$WORK"/*.XLN \
+"$WORK"/*.GKO \
+"$WORK"/*.GTO \
+"$WORK"/*.GTL \
+"$WORK"/*.GTS \
+"$WORK"/*.GBO \
+"$WORK"/*.GBL \
+"$WORK"/*.GBS \
+"$WORK"/*.gbr
