@@ -1,0 +1,6 @@
+rev1 issues
+
+* Need 1.2V test points on top side.
+* Would be good to mark ARD pins on top side.
+
+* bus transceiver not working so easily.  Probably needed to put pull ups on driving side...
