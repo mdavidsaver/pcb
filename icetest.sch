@@ -41,7 +41,7 @@ encoding utf-8
 Sheet 1 3
 Title "Arduino shield with iCE40 FPGA"
 Date ""
-Rev "0"
+Rev "2"
 Comp "mdavidsaver@gmail.com"
 Comment1 ""
 Comment2 ""
@@ -54,7 +54,7 @@ U 1 1 578B8877
 P 6200 4250
 F 0 "SEL3V3" H 6250 4150 50  0000 L CNN
 F 1 "JUMPER" H 6200 4350 50  0000 C BNN
-F 2 "Connect:PINHEAD1-3" H 6200 4250 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6200 4250 50  0001 C CNN
 F 3 "" H 6200 4250 50  0000 C CNN
 	1    6200 4250
 	1    0    0    -1  
@@ -219,7 +219,7 @@ U 1 1 578BA561
 P 9250 1700
 F 0 "SEL1V2" H 9300 1600 50  0000 L CNN
 F 1 "JUMPER" H 9250 1800 50  0000 C BNN
-F 2 "Connect:PINHEAD1-3" H 9250 1700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 9250 1700 50  0001 C CNN
 F 3 "" H 9250 1700 50  0000 C CNN
 	1    9250 1700
 	1    0    0    -1  
@@ -1002,4 +1002,15 @@ Wire Wire Line
 	4550 5000 3550 5000
 Wire Wire Line
 	3550 5100 4550 5100
+$Comp
+L TEST_1P W12
+U 1 1 57FAF380
+P 7000 2000
+F 0 "W12" H 7000 2270 50  0000 C CNN
+F 1 "TEST_1P" H 7000 2200 50  0000 C CNN
+F 2 "Connect:PINTST" H 7200 2000 50  0001 C CNN
+F 3 "" H 7200 2000 50  0000 C CNN
+	1    7000 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
