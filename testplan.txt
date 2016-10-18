@@ -1,0 +1,18 @@
+* Populate 1.2v and 3.3v regulators and test w/ standalone 5v supply.
+  * All voltages accessible from top side
+
+* Populate UL1, 2, and 3 and test level shifting
+  * Test pads for all 6 control lines
+
+* Populate ICE1 and test bit stream load
+  * AVR program to load via. SPI
+  * .v to loop back MOSI to MISO and D9 to D8 (RST -> CDONE)
+
+* Populate OSC1 and check frequency
+  * copy OSC1 to output pin(s)
+
+* Populate LEDs, UL4 and test
+  * copy D5,6 to LED outputs, drive with AVR PWM
+
+* Populate UL5, 6, 7, 8 and test 5V from ICE1
+  * copy D5,6 to outputs
