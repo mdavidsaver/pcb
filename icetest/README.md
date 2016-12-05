@@ -1,7 +1,10 @@
 Arduino Shield w/ iCE40 FPGA
 ============================
 
-State: Development
+State: Rev 2 tested
+
+[Firmware](https://github.com/mdavidsaver/fpga/tree/master/top/icetest_r2)
+[Software](https://github.com/mdavidsaver/fpga/tree/master/avr)
 
 
 ice40 chip used with 3.3V I/O pins and 1.2V core.
