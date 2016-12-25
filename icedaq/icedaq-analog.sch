@@ -1,0 +1,150 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ice40
+LIBS:SN74LVC2T45
+LIBS:misc
+LIBS:rpi
+LIBS:adc082s021
+LIBS:icedaq-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L iCE40HX1K-VQ100 U2
+U 3 1 586170C9
+P 2550 1800
+F 0 "U2" H 3000 2400 60  0000 C CNN
+F 1 "iCE40HX1K-VQ100" H 2550 2600 60  0001 C CNN
+F 2 "" H 2800 1900 60  0000 C CNN
+F 3 "" H 2800 1900 60  0000 C CNN
+	3    2550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40HX1K-VQ100 U2
+U 4 1 58617116
+P 2350 3750
+F 0 "U2" H 2800 4350 60  0000 C CNN
+F 1 "iCE40HX1K-VQ100" H 2350 4550 60  0001 C CNN
+F 2 "" H 2600 3850 60  0000 C CNN
+F 3 "" H 2600 3850 60  0000 C CNN
+	4    2350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40HX1K-VQ100 U2
+U 6 1 58617157
+P 2100 5500
+F 0 "U2" H 2550 6100 60  0000 C CNN
+F 1 "iCE40HX1K-VQ100" H 2100 6300 60  0001 C CNN
+F 2 "" H 2350 5600 60  0000 C CNN
+F 3 "" H 2350 5600 60  0000 C CNN
+	6    2100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADC082S021 U?
+U 1 1 586172E7
+P 4850 1800
+F 0 "U?" H 5100 2100 60  0000 C CNN
+F 1 "ADC082S021" H 4450 2100 60  0000 C CNN
+F 2 "" H 5000 1750 60  0000 C CNN
+F 3 "" H 5000 1750 60  0000 C CNN
+	1    4850 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ADC082S021 U?
+U 1 1 58617409
+P 4850 3350
+F 0 "U?" H 5100 3650 60  0000 C CNN
+F 1 "ADC082S021" H 4450 3650 60  0000 C CNN
+F 2 "" H 5000 3300 60  0000 C CNN
+F 3 "" H 5000 3300 60  0000 C CNN
+	1    4850 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 586174DF
+P 4850 1350
+F 0 "#PWR?" H 4850 1200 50  0001 C CNN
+F 1 "+3.3V" H 4850 1490 50  0000 C CNN
+F 2 "" H 4850 1350 50  0000 C CNN
+F 3 "" H 4850 1350 50  0000 C CNN
+	1    4850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58617500
+P 4850 2900
+F 0 "#PWR?" H 4850 2750 50  0001 C CNN
+F 1 "+3.3V" H 4850 3040 50  0000 C CNN
+F 2 "" H 4850 2900 50  0000 C CNN
+F 3 "" H 4850 2900 50  0000 C CNN
+	1    4850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5861753A
+P 4850 2250
+F 0 "#PWR?" H 4850 2000 50  0001 C CNN
+F 1 "GND" H 4850 2100 50  0000 C CNN
+F 2 "" H 4850 2250 50  0000 C CNN
+F 3 "" H 4850 2250 50  0000 C CNN
+	1    4850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5861755B
+P 4850 3800
+F 0 "#PWR?" H 4850 3550 50  0001 C CNN
+F 1 "GND" H 4850 3650 50  0000 C CNN
+F 2 "" H 4850 3800 50  0000 C CNN
+F 3 "" H 4850 3800 50  0000 C CNN
+	1    4850 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

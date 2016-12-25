@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADC082S021
+D ADC 8BIT 2CH 200KSPS
+F http://www.ti.com/lit/ds/symlink/adc082s021.pdf
+$ENDCMP
+#
+#End Doc Library

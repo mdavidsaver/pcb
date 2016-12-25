@@ -1,0 +1,9 @@
+http://docs.oshpark.com/services/two-layer/
+
+6 mil minimum trace width
+6 mil minimum trace spacing (clearance)
+
+13 mil minimum drill
+7 mil annular ring
+
+27 mil min via size

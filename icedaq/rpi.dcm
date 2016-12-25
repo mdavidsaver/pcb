@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RPi
+D Raspberry Pi GPIO 3b GPIO
+F https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/RPI-3B-V1_2-SCHEMATIC-REDUCED.pdf
+$ENDCMP
+#
+#End Doc Library

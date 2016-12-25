@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP sn74lvc2t45
+D 2-bit Bi-directional logic level translator (DIR=1 A->B, DIR=0 A<-B)
+F http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf
+$ENDCMP
+#
+#End Doc Library
