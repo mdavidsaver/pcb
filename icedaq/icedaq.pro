@@ -1,4 +1,4 @@
-update=Sun 25 Dec 2016 04:54:22 PM EST
+update=Sun 13 Aug 2017 09:30:58 AM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,4 @@ LibName31=SN74LVC2T45
 LibName32=misc
 LibName33=rpi
 LibName34=adc082s021
+LibName35=dacx311

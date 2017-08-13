@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DACx311
+D SPI DAC single channel
+K SPI DAC
+F http://www.ti.com/lit/ds/symlink/dac5311.pdf
+$ENDCMP
+#
+#End Doc Library
