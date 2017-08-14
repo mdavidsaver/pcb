@@ -504,7 +504,7 @@ SPI0 to configure
 Text Notes 7350 5150 2    60   ~ 0
 SPI1 for debug
 Text Notes 7400 5650 2    60   ~ 0
-iCE40 configure control
+iCE40 configure control\n(GPIO)
 Text Notes 7350 4650 2    60   ~ 0
 UART
 NoConn ~ 7850 4400
@@ -1111,4 +1111,6 @@ F 3 "" H 5500 6800 50  0000 C CNN
 	1    5500 6800
 	1    0    0    -1  
 $EndComp
+Text Notes 800  5650 0    60   ~ 0
+Identification EEPROM
 $EndSCHEMATC

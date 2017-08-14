@@ -527,7 +527,7 @@ $EndComp
 Wire Wire Line
 	6150 2250 6150 2200
 Text Notes 7300 650  0    60   ~ 0
-input buffer, then divide 5V -> 3.3V
+gain=1 input buffer, then divide 5V -> 3.3V
 $Comp
 L MCP6004 U7
 U 2 1 59907FFE
@@ -821,7 +821,7 @@ out3a
 Text Label 4600 6850 0    60   ~ 0
 out3a
 Text Notes 6200 4250 0    60   ~ 0
-output buffer amplifies 3.3V -> 5V
+non-inverting gain=1.5, output buffer amplifies 3.3V -> 5V
 $Comp
 L +5V #PWR065
 U 1 1 5990A89E
@@ -1031,7 +1031,7 @@ L Screw_Terminal_1x06 J2
 U 1 1 5990BC4E
 P 10450 3200
 F 0 "J2" H 10450 3850 50  0000 C TNN
-F 1 "analog inputs" V 10300 3200 50  0000 C TNN
+F 1 "analog inputs" H 10550 3950 50  0000 C TNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_6pol" H 10450 2575 50  0001 C CNN
 F 3 "" H 10425 3600 50  0001 C CNN
 	1    10450 3200
@@ -1080,7 +1080,7 @@ L Screw_Terminal_1x04 J1
 U 1 1 5990D41E
 P 7300 3450
 F 0 "J1" H 7300 3900 50  0000 C TNN
-F 1 "analog outputs" V 7150 3450 50  0000 C TNN
+F 1 "analog outputs" H 7400 4050 50  0000 C TNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol" H 7300 3025 50  0001 C CNN
 F 3 "" H 7275 3650 50  0001 C CNN
 	1    7300 3450
