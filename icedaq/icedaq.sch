@@ -42,7 +42,7 @@ encoding utf-8
 Sheet 1 2
 Title "iCE40 Raspberry Pi 3b GPIO"
 Date ""
-Rev "1"
+Rev "draft"
 Comp "MAD"
 Comment1 ""
 Comment2 ""
@@ -429,13 +429,13 @@ F 3 "" H 10050 4850 50  0000 C CNN
 	1    10050 4850
 	1    0    0    -1  
 $EndComp
-Text Label 7800 4100 2    60   ~ 0
+Text Label 7800 5100 2    60   ~ 0
 MISO
-Text Label 7800 4200 2    60   ~ 0
+Text Label 7800 5200 2    60   ~ 0
 MOSI
-Text Label 7800 4300 2    60   ~ 0
+Text Label 7800 5300 2    60   ~ 0
 SCK
-Text Label 7750 4000 2    60   ~ 0
+Text Label 7750 4800 2    60   ~ 0
 SS
 Text Label 7800 5600 2    60   ~ 0
 CDONE
@@ -479,7 +479,7 @@ NoConn ~ 7850 5800
 NoConn ~ 7850 5500
 NoConn ~ 7850 5400
 NoConn ~ 7850 4900
-NoConn ~ 7850 4800
+NoConn ~ 7850 5000
 NoConn ~ 7850 3900
 NoConn ~ 7850 3500
 NoConn ~ 7850 3400
@@ -491,18 +491,10 @@ Text Label 7800 4600 2    60   ~ 0
 TXD
 Text Label 7800 4700 2    60   ~ 0
 RXD
-Text Label 7800 5000 2    60   ~ 0
-SS1
-Text Label 7800 5100 2    60   ~ 0
-MISO1
-Text Label 7800 5200 2    60   ~ 0
-MOSI1
-Text Label 7800 5300 2    60   ~ 0
-SCLK1
-Text Notes 7350 4150 2    60   ~ 0
-SPI0 to configure
+Text Notes 7100 4150 2    60   ~ 0
+SPI0 for application
 Text Notes 7350 5150 2    60   ~ 0
-SPI1 for debug
+SPI1 for configure/debug
 Text Notes 7400 5650 2    60   ~ 0
 iCE40 configure control\n(GPIO)
 Text Notes 7350 4650 2    60   ~ 0
@@ -614,13 +606,13 @@ Connection ~ 9800 4450
 Connection ~ 9800 4350
 Connection ~ 9800 4250
 Wire Wire Line
-	7850 4100 7600 4100
+	7850 5100 7600 5100
 Wire Wire Line
-	7850 4200 7600 4200
+	7850 5200 7600 5200
 Wire Wire Line
-	7850 4300 7600 4300
+	7850 5300 7600 5300
 Wire Wire Line
-	7850 4000 7600 4000
+	7850 4800 7600 4800
 Wire Wire Line
 	7850 5700 7600 5700
 Wire Wire Line
@@ -632,8 +624,6 @@ Wire Wire Line
 	6550 1600 6550 1650
 Connection ~ 6550 1650
 Wire Wire Line
-	7850 3600 7650 3600
-Wire Wire Line
 	7850 3700 7650 3700
 Wire Wire Line
 	7850 3800 7650 3800
@@ -642,13 +632,13 @@ Wire Wire Line
 Wire Wire Line
 	7850 4700 7600 4700
 Wire Wire Line
-	7850 5000 7600 5000
+	7850 4000 7750 4000
 Wire Wire Line
-	7850 5100 7600 5100
+	7850 4100 7450 4100
 Wire Wire Line
-	7850 5200 7600 5200
+	7850 4200 7800 4200
 Wire Wire Line
-	7850 5300 7600 5300
+	7850 4300 7450 4300
 Wire Wire Line
 	6900 6100 6650 6100
 Wire Wire Line
@@ -682,22 +672,6 @@ Text Label 4300 4900 2    60   ~ 0
 GCLK0
 Text Label 4300 5000 2    60   ~ 0
 GCLK1
-Wire Wire Line
-	5750 4300 6050 4300
-Wire Wire Line
-	5750 4400 6050 4400
-Wire Wire Line
-	5750 4500 6050 4500
-Wire Wire Line
-	5750 4600 6050 4600
-Text Label 5850 4300 0    60   ~ 0
-SS1
-Text Label 5800 4600 0    60   ~ 0
-MISO1
-Text Label 5800 4500 0    60   ~ 0
-MOSI1
-Text Label 5800 4400 0    60   ~ 0
-SCLK1
 Wire Wire Line
 	4400 4900 4100 4900
 $Comp
@@ -745,10 +719,6 @@ NoConn ~ 5300 6100
 NoConn ~ 5300 6200
 NoConn ~ 5300 6300
 NoConn ~ 3600 6800
-NoConn ~ 3600 6700
-NoConn ~ 3600 6600
-NoConn ~ 3600 6500
-NoConn ~ 3600 6400
 NoConn ~ 3600 6300
 NoConn ~ 3600 6200
 NoConn ~ 3600 6100
@@ -823,7 +793,7 @@ F 3 "" H 2300 3550 50  0000 C CNN
 	1    2300 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 2950 4000 2    60   Input ~ 0
+Text GLabel 2950 4000 2    60   Output ~ 0
 clk
 $Comp
 L C_Small CD3
@@ -958,12 +928,8 @@ F 3 "" H 6650 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4400 4800
-Text GLabel 7650 3550 1    60   Input ~ 0
-GCLK2
-Wire Wire Line
-	7650 3600 7650 3550
-Text Notes 6350 6900 0    60   ~ 0
-See https://github.com/raspberrypi/hats/blob/master/designguide.md
+Text Notes 7200 3050 0    60   ~ 0
+https://github.com/raspberrypi/hats/blob/master/designguide.md
 Text Notes 7300 6450 0    60   ~ 0
 Break out MCU UART
 $Comp
@@ -1014,7 +980,7 @@ F 3 "" H 1550 6000 50  0000 C CNN
 	1    1550 6000
 	1    0    0    -1  
 $EndComp
-Text Notes 1800 6850 0    60   ~ 0
+Text Notes 1700 7150 0    60   ~ 0
 Write protect\nflows low (disabled)
 $Comp
 L R RB1
@@ -1080,37 +1046,66 @@ Wire Wire Line
 	9800 3400 9950 3400
 Wire Wire Line
 	9800 3500 9950 3500
-NoConn ~ 1950 6400
 $Comp
 L CONN_01X05 P2
 U 1 1 59932164
-P 5700 6600
-F 0 "P2" H 5700 6900 50  0000 C CNN
-F 1 "GPIO" V 5800 6600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.00mm" H 5700 6600 50  0001 C CNN
-F 3 "" H 5700 6600 50  0000 C CNN
-	1    5700 6600
-	1    0    0    -1  
+P 3200 6600
+F 0 "P2" H 3200 6900 50  0000 C CNN
+F 1 "GPIO" V 3300 6600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.00mm" H 3200 6600 50  0001 C CNN
+F 3 "" H 3200 6600 50  0000 C CNN
+	1    3200 6600
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 6400 5300 6400
+	3400 6400 3600 6400
 Wire Wire Line
-	5300 6500 5500 6500
+	3600 6500 3400 6500
 Wire Wire Line
-	5500 6600 5300 6600
+	3400 6600 3600 6600
 Wire Wire Line
-	5300 6700 5500 6700
+	3600 6700 3400 6700
 $Comp
 L GND #PWR042
 U 1 1 599324BC
-P 5500 6800
-F 0 "#PWR042" H 5500 6550 50  0001 C CNN
-F 1 "GND" H 5500 6650 50  0000 C CNN
-F 2 "" H 5500 6800 50  0000 C CNN
-F 3 "" H 5500 6800 50  0000 C CNN
-	1    5500 6800
-	1    0    0    -1  
+P 3400 6800
+F 0 "#PWR042" H 3400 6550 50  0001 C CNN
+F 1 "GND" H 3400 6650 50  0000 C CNN
+F 2 "" H 3400 6800 50  0000 C CNN
+F 3 "" H 3400 6800 50  0000 C CNN
+	1    3400 6800
+	-1   0    0    -1  
 $EndComp
 Text Notes 800  5650 0    60   ~ 0
 Identification EEPROM
+Text GLabel 7750 4000 0    60   Output ~ 0
+SS1
+Text GLabel 7450 4100 0    60   Input ~ 0
+MISO1
+Text GLabel 7800 4200 0    60   Output ~ 0
+MOSI1
+Text GLabel 7450 4300 0    60   Output ~ 0
+SCLK1
+NoConn ~ 5750 4300
+NoConn ~ 5750 4400
+NoConn ~ 5750 4500
+NoConn ~ 5750 4600
+NoConn ~ 5300 6400
+NoConn ~ 5300 6500
+NoConn ~ 5300 6600
+NoConn ~ 5300 6700
+NoConn ~ 7850 3600
+$Comp
+L TEST TP1
+U 1 1 599CB445
+P 2100 6400
+F 0 "TP1" H 2100 6700 50  0000 C BNN
+F 1 "WP" H 2100 6650 50  0000 C CNN
+F 2 "local:testpoint" H 2100 6400 50  0001 C CNN
+F 3 "" H 2100 6400 50  0000 C CNN
+	1    2100 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 6400 1950 6400
 $EndSCHEMATC
