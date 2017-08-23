@@ -41,8 +41,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "iCE40 Raspberry Pi 3b GPIO"
-Date ""
-Rev "draft"
+Date "2017-08-23"
+Rev "1"
 Comp "MAD"
 Comment1 ""
 Comment2 ""
@@ -1036,34 +1036,15 @@ Wire Wire Line
 Wire Wire Line
 	9800 3500 9950 3500
 $Comp
-L CONN_01X05 P2
-U 1 1 59932164
-P 3850 4600
-F 0 "P2" H 3850 4900 50  0000 C CNN
-F 1 "GPIO" V 3950 4600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.00mm" H 3850 4600 50  0001 C CNN
-F 3 "" H 3850 4600 50  0000 C CNN
-	1    3850 4600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4050 4800 4400 4800
-Wire Wire Line
-	4400 4700 4050 4700
-Wire Wire Line
-	4050 4600 4400 4600
-Wire Wire Line
-	4400 4500 4050 4500
-$Comp
 L GND #PWR042
 U 1 1 599324BC
-P 4050 4400
-F 0 "#PWR042" H 4050 4150 50  0001 C CNN
-F 1 "GND" H 4050 4250 50  0000 C CNN
-F 2 "" H 4050 4400 50  0000 C CNN
-F 3 "" H 4050 4400 50  0000 C CNN
-	1    4050 4400
-	-1   0    0    1   
+P 3800 4900
+F 0 "#PWR042" H 3800 4650 50  0001 C CNN
+F 1 "GND" H 3800 4750 50  0000 C CNN
+F 2 "" H 3800 4900 50  0000 C CNN
+F 3 "" H 3800 4900 50  0000 C CNN
+	1    3800 4900
+	0    -1   1    0   
 $EndComp
 Text Notes 800  5650 0    60   ~ 0
 Identification EEPROM
@@ -1171,4 +1152,58 @@ Wire Wire Line
 	5400 6400 5300 6400
 Wire Wire Line
 	5300 6500 5400 6500
+$Comp
+L CONN_01X06 P2
+U 1 1 599D8BD0
+P 3600 4750
+F 0 "P2" H 3600 5100 50  0000 C CNN
+F 1 "GPIO0" V 3700 4750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 3600 4750 50  0001 C CNN
+F 3 "" H 3600 4750 50  0000 C CNN
+	1    3600 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR045
+U 1 1 599D8E98
+P 3800 5000
+F 0 "#PWR045" H 3800 4750 50  0001 C CNN
+F 1 "GND" H 3800 4850 50  0000 C CNN
+F 2 "" H 3800 5000 50  0000 C CNN
+F 3 "" H 3800 5000 50  0000 C CNN
+	1    3800 5000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4400 4500 4050 4500
+Wire Wire Line
+	4050 4500 4050 4600
+Wire Wire Line
+	4050 4600 3800 4600
+Wire Wire Line
+	4400 4600 4200 4600
+Wire Wire Line
+	4200 4600 4200 4550
+Wire Wire Line
+	4200 4550 3900 4550
+Wire Wire Line
+	3900 4550 3900 4500
+Wire Wire Line
+	3900 4500 3800 4500
+Wire Wire Line
+	4400 4700 3950 4700
+Wire Wire Line
+	3950 4700 3950 4800
+Wire Wire Line
+	3950 4800 3800 4800
+Wire Wire Line
+	4400 4800 4100 4800
+Wire Wire Line
+	4100 4800 4100 4750
+Wire Wire Line
+	4100 4750 3850 4750
+Wire Wire Line
+	3850 4750 3850 4700
+Wire Wire Line
+	3850 4700 3800 4700
 $EndSCHEMATC
